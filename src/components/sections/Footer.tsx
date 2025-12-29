@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-3 text-lg font-semibold text-foreground">DevServices</h3>
+            <h3 className="mb-3 text-lg font-semibold text-foreground">SolusiSyntax</h3>
             <p className="text-sm text-muted-foreground">Jasa pengembangan aplikasi web untuk UMKM, startup, dan bisnis yang butuh sistem digital yang rapi dan profesional.</p>
           </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} DevServices. All rights reserved.</p>
+          <p>&copy; {currentYear} SolusiSyntax. All rights reserved.</p>
         </div>
       </div>
     </footer>
