@@ -59,7 +59,7 @@ const Header = () => {
                 </a>
               ))}
               <Button size="sm" className="w-fit" asChild>
-                <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/6289603159562?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi" target="_blank" rel="noopener noreferrer">
                   Hubungi Saya
                 </a>
               </Button>
