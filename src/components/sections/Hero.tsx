@@ -20,7 +20,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
           <Button variant="hero" asChild>
-            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6289603159562?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-5 w-5" />
               Konsultasi Gratis
             </a>
