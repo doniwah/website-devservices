@@ -3,13 +3,13 @@ import { MessageCircle } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="section-container section-padding">
+    <section className="section-container pt-20 pb-10 md:pt-28 md:pb-14">
       <div className="max-w-3xl">
         {/* Badge */}
 
         {/* Headline */}
         <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          Bangun Sistem Digital yang <span className="gradient-text">Rapi, Stabil,</span> dan Siap Dipakai
+          Jasa Pembuatan Aplikasi Web untuk <span className="gradient-text">UMKM & Startup</span>
         </h1>
 
         {/* Subheadline */}
@@ -20,7 +20,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
           <Button variant="hero" asChild>
-            <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6289603159562?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-5 w-5" />
               Konsultasi Gratis
             </a>

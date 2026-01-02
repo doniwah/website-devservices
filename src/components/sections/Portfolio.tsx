@@ -1,37 +1,44 @@
-import { ExternalLink } from "lucide-react";
-
 const projects = [
   {
-    title: "Sistem Inventory Toko Elektronik",
+    title: "Sistem Penjadwalan Otomatis dengan Algoritma Genetika",
     category: "Web Application",
-    problem: "Pemilik toko kesulitan melacak stok di 3 cabang berbeda. Data sering tidak sinkron dan sering terjadi salah kirim barang.",
-    solution: "Membangun sistem inventory terpusat dengan fitur transfer antar cabang, alert stok minimum, dan laporan harian otomatis.",
+    problem: "Dalam sebuah kampus sering terjadi bentrok jadwal ruang kelas karena penjadwalan manual.",
+    solution: "Membangun sistem penjadwalan otomatis yang dapat menghindari bentrok jadwal dan memberikan notifikasi kepada dosen dan mahasiswa.",
     tech: ["Laravel", "MySQL", "Vue.js", "REST API"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    image: "../../dashboard.png",
   },
   {
-    title: "Dashboard Penjualan UMKM",
-    category: "Business Intelligence",
-    problem: "Owner harus rekap manual setiap minggu dari banyak file Excel. Proses ini makan waktu 2-3 jam dan sering salah hitung.",
-    solution: "Dashboard real-time yang auto-sync dengan sistem kasir. Visualisasi penjualan, produk terlaris, dan trend bulanan.",
-    tech: ["Laravel", "Chart.js", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-  },
-  {
-    title: "Sistem Booking Lapangan Futsal",
+    title: "Website Profile Organisasi Kampus",
     category: "Web Application",
-    problem: "Booking via WhatsApp sering double-book. Pelanggan komplain karena jadwal bentrok saat datang.",
-    solution: "Sistem booking online dengan kalendar real-time. Customer bisa lihat slot tersedia dan bayar langsung.",
-    tech: ["Laravel", "Midtrans", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop",
+    problem: "Client ingin merancang dan mengembangkan website profile organisasi kampus yang menarik dan informatif.",
+    solution: "Membangun website dengan desain responsif, fitur blog, galeri foto, dan integrasi media sosial untuk meningkatkan visibilitas organisasi.",
+    tech: ["Express JS", "Node JS", "MySQL"],
+    image: "../../organisasi.jpeg",
   },
   {
-    title: "Perbaikan Sistem Klinik",
-    category: "Bug Fix & Optimization",
-    problem: "Sistem rekam medis yang dibuat developer sebelumnya sering error. Loading lambat dan data kadang hilang.",
-    solution: "Audit kode, fix bug kritis, optimasi query database. Waktu loading turun dari 8 detik jadi di bawah 1 detik.",
-    tech: ["Laravel", "MySQL", "Redis Cache"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+    title: "Sistem Inventory Toko Snack",
+    category: "Web Application",
+    problem: "Client ingin dibuatkan website inventory untuk mengelola master data, barang masuk, barang keluar, dan laporan stok.",
+    solution: "Membangun sistem inventory berbasis web dengan fitur lengkap untuk memudahkan pengelolaan stok barang secara real-time.",
+    tech: ["React", "Supabase", "Tailwind CSS", "Vercel"],
+    image: "../../inventory.png",
+  },
+  {
+    title: "Website Informasi & Pengumpulan Lomba",
+    category: "Web Application",
+    problem: "Informasi lomba sebelumnya tersebar di berbagai platform dan proses pengumpulan karya masih manual, sehingga membingungkan peserta dan menyulitkan panitia dalam melakukan rekap data.",
+    solution:
+      "Membangun website terpusat untuk publikasi informasi lomba dan pengumpulan karya secara online. Sistem dilengkapi manajemen lomba, upload karya, validasi data, serta dashboard admin sehingga proses pendaftaran dan penilaian menjadi lebih cepat, rapi, dan terorganisir.",
+    tech: ["Laravel", "MySQL"],
+    image: "../../epim.jpeg",
+  },
+  {
+    title: "Website Ticketing Online",
+    category: "Web Application & Payment Integration",
+    problem: "Proses pembayaran tiket masih manual dan tidak efisien.",
+    solution: "Menambahkan payment gateway agar pembelian tiket dapat dilakukan secara online, otomatis, dan aman dengan berbagai metode pembayaran.",
+    tech: ["Laravel", "MySQL", "Midtrans API"],
+    image: "../../aom.jpeg",
   },
 ];
 
@@ -40,44 +47,27 @@ const Portfolio = () => {
     <section id="portfolio" className="section-container section-padding">
       {/* Section Header */}
       <div className="mb-12 text-center">
-        <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">
-          Portfolio
-        </p>
-        <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
-          Beberapa project yang pernah saya kerjakan
-        </h2>
-        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-          Setiap project punya cerita dan tantangan unik. Ini beberapa yang bisa saya share.
-        </p>
+        <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Portfolio</p>
+        <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">Beberapa project yang pernah saya kerjakan</h2>
+        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">Setiap project punya cerita dan tantangan unik. Ini beberapa yang bisa saya share.</p>
       </div>
 
       {/* Projects Grid */}
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
-          <article
-            key={project.title}
-            className="group overflow-hidden rounded-xl border border-border bg-background card-hover"
-          >
+          <article key={project.title} className="group overflow-hidden rounded-xl border border-border bg-background card-hover">
             {/* Image */}
             <div className="aspect-video overflow-hidden bg-muted">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             </div>
 
             {/* Content */}
             <div className="p-6">
               {/* Category */}
-              <p className="mb-2 text-xs font-medium uppercase tracking-wider text-primary">
-                {project.category}
-              </p>
+              <p className="mb-2 text-xs font-medium uppercase tracking-wider text-primary">{project.category}</p>
 
               {/* Title */}
-              <h3 className="mb-4 text-xl font-semibold text-foreground">
-                {project.title}
-              </h3>
+              <h3 className="mb-4 text-xl font-semibold text-foreground">{project.title}</h3>
 
               {/* Problem & Solution */}
               <div className="mb-4 space-y-3 text-sm">
@@ -94,10 +84,7 @@ const Portfolio = () => {
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
-                  >
+                  <span key={tech} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
                     {tech}
                   </span>
                 ))}

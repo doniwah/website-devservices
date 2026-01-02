@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,8 +25,9 @@ const Header = () => {
       <div className="section-container">
         <nav className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-lg font-semibold text-foreground">
-            SolusiSyntax
+          <a href="/" className="flex items-center gap-2">
+            <img src="/logo.png" alt="Logo SolusiSyntax" className="h-8 w-8" />
+            <span className="text-lg font-semibold text-foreground">SolusiSyntax</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -37,7 +38,7 @@ const Header = () => {
               </a>
             ))}
             <Button size="sm" asChild>
-              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6289603159562?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi" target="_blank" rel="noopener noreferrer">
                 Hubungi Saya
               </a>
             </Button>

@@ -18,7 +18,7 @@ const CTA = () => {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="bg-background text-foreground hover:bg-background/90 h-12 px-8 text-base font-semibold shadow-lg" asChild>
-              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6289603159562?text=Halo%2C%20saya%20tertarik%20untuk%20konsultasi%20tentang%20project%20saya" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="h-5 w-5" />
                 Chat via WhatsApp
               </a>

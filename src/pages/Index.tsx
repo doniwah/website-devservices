@@ -2,6 +2,7 @@ import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
+import Portfolio from "@/components/sections/Portfolio";
 import Problems from "@/components/sections/Problems";
 import Services from "@/components/sections/Services";
 import Solutions from "@/components/sections/Solutions";
@@ -16,7 +17,7 @@ const Index = () => {
         <Problems />
         <Solutions />
         <Services />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <WhyMe />
         <CTA />
       </main>

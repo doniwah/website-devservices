@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-3 text-lg font-semibold text-foreground">DevServices</h3>
+            <h3 className="mb-3 text-lg font-semibold text-foreground">SolusiSyntax</h3>
             <p className="text-sm text-muted-foreground">Jasa pengembangan aplikasi web untuk UMKM, startup, dan bisnis yang butuh sistem digital yang rapi dan profesional.</p>
           </div>
 
@@ -41,8 +41,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:whyddoni@gmail.com" className="transition-colors hover:text-foreground">
-                  whyddoni@gmail.com
+                <a href="mailto:solusisyntax@gmail.com" className="transition-colors hover:text-foreground">
+                  solusisyntax@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} DevServices. All rights reserved.</p>
+          <p>&copy; {currentYear} SolusiSyntax. All rights reserved.</p>
         </div>
       </div>
     </footer>
